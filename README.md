@@ -25,8 +25,8 @@
 
 ## 公開範囲と検索回避
 
-リポジトリはPrivateのままにしますが、GitHub Pagesで公開した `docs/index.html` は誰でもURLで閲覧できます。検索エンジンにインデックス登録しないよう `noindex` を設定していますが、非公開アクセス制御ではありません。
+リポジトリの公開範囲はGitHubのSettingsで確認してください。2026年11月1日の確認時点でこのリポジトリはPublicになっています。GitHub Pagesで公開した `docs/index.html` と `docs/people.html` も誰でもURLで閲覧できます。検索エンジンにインデックス登録しないよう `noindex` を設定していますが、非公開アクセス制御ではありません。
 
-`/docs` のみを公開するため、`/materials` 配下のTXTファイルはPagesから直接配信しません。ただし、ビュアーのHTML/JavaScriptには解答データが含まれており、閲覧者はそれを取得できます。
+`/docs` のみをPages配信に使うため、`/materials` 配下のTXTファイルはPagesから直接配信しません。ただし、リポジトリがPublicの間はGitHubのリポジトリ画面からTXTファイルも閲覧できます。また、ビュアーのHTML/JavaScriptには解答データが含まれており、Pagesの閲覧者も取得できます。
 
 GitHub Pro等、PrivateリポジトリからPagesを公開できる対応プランが必要です。
