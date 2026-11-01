@@ -5,6 +5,7 @@
 ## ファイル構成
 
 - `docs/index.html` — GitHub Pagesで公開する学習ビュアー。HTML単体で動作します。
+- `docs/people.html` — 人物名特訓専用ページ（41人。名前を含む事件名・訴訟名を手掛かりにしない出題）。
 - `index.html` — ビュアーの複製（リポジトリ内の参照用）。
 - `materials/questions.txt` — 問題集（リポジトリ内のみ）。
 - `materials/answers.txt` — 解答集（リポジトリ内のみ）。
@@ -19,6 +20,8 @@
 - Save
 
 通常の公開先URL: https://bomellia.github.io/sekaishi/
+
+人物名特訓: https://bomellia.github.io/sekaishi/people.html
 
 ## 公開範囲と検索回避
 
