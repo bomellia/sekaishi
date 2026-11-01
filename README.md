@@ -2,17 +2,27 @@
 
 第1〜9章の穴埋め問題集（全27セット・342問）の再修正版です。
 
-- [学習ビュアーを開く](./index.html) — HTML単体で動作します。
-- [問題集（テキスト）](./materials/questions.txt)
-- [解答集（テキスト）](./materials/answers.txt)
+## ファイル構成
 
-## GitHub Pagesの公開設定
+- `docs/index.html` — GitHub Pagesで公開する学習ビュアー。HTML単体で動作します。
+- `index.html` — ビュアーの複製（リポジトリ内の参照用）。
+- `materials/questions.txt` — 問題集（リポジトリ内のみ）。
+- `materials/answers.txt` — 解答集（リポジトリ内のみ）。
 
-1. リポジトリの **Settings → Pages** を開きます。
-2. **Build and deployment → Source** を **Deploy from a branch** にします。
-3. **Branch: main**、フォルダー **/(root)** を選び **Save** を押します。
-4. 公開先は通常 `https://bomellia.github.io/sekaishi/` です。
+## GitHub Pages設定
 
-**重要:** リポジトリがPrivateでも、通常のGitHub Pagesサイトは外部から閲覧可能です。非公開リポジトリからのPages公開にはGitHub Proなどの対応プランが必要です。問題文だけでなく学習ビュアー内の解答データも公開されます。
+- Settings → Pages → Build and deployment
+- Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/docs**
+- Save
 
-このHTMLは依存ファイルなしで動作するため、ビルド工程は不要です。
+通常の公開先URL: https://bomellia.github.io/sekaishi/
+
+## 公開範囲と検索回避
+
+リポジトリはPrivateのままにしますが、GitHub Pagesで公開した `docs/index.html` は誰でもURLで閲覧できます。検索エンジンにインデックス登録しないよう `noindex` を設定していますが、非公開アクセス制御ではありません。
+
+`/docs` のみを公開するため、`/materials` 配下のTXTファイルはPagesから直接配信しません。ただし、ビュアーのHTML/JavaScriptには解答データが含まれており、閲覧者はそれを取得できます。
+
+GitHub Pro等、PrivateリポジトリからPagesを公開できる対応プランが必要です。
